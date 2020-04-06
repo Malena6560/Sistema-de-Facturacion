@@ -8,7 +8,11 @@ namespace Progamacion3F.Models
 {
     public class MatenimientosContext:DbContext
     {
-        
+        public MatenimientosContext(): base("FinalProg3")
+        {
+
+        }
+
         public DbSet<Productos> Producto { get; set; }
         public DbSet<Clientes> Cliente { get; set; }
         public DbSet<Proveedores> Proveedor { get; set; }

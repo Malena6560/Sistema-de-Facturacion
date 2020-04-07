@@ -89,3 +89,5 @@ C:\Users\Malena\Documents\GitHub\Sistema-de-Facturacion\Progamacion3F\Progamacio
 C:\Users\Malena\Documents\GitHub\Sistema-de-Facturacion\Progamacion3F\Progamacion3F\obj\Debug\Progamacion3F.csproj.CopyComplete
 C:\Users\Malena\Documents\GitHub\Sistema-de-Facturacion\Progamacion3F\Progamacion3F\obj\Debug\Progamacion3F.dll
 C:\Users\Malena\Documents\GitHub\Sistema-de-Facturacion\Progamacion3F\Progamacion3F\obj\Debug\Progamacion3F.pdb
+C:\Users\Malena\Documents\GitHub\Sistema-de-Facturacion\Progamacion3F\Progamacion3F\obj\Debug\Progamacion3F.Migrations.ClientesClassv1.resources
+C:\Users\Malena\Documents\GitHub\Sistema-de-Facturacion\Progamacion3F\Progamacion3F\obj\Debug\Progamacion3F.csproj.GenerateResource.cache

@@ -10,112 +10,107 @@ using Progamacion3F.Models;
 
 namespace Progamacion3F.Controllers
 {
-    public class ClientesController : Controller
+    public class CategoriasController : Controller
     {
         private MatenimientosContext db = new MatenimientosContext();
 
-        // GET: Clientes
+        // GET: Categorias
         public ActionResult Index()
         {
-            var cliente = db.Cliente.Include(c => c.Categoria);
-            return View(cliente.ToList());
+            return View(db.Categorias.ToList());
         }
 
-        // GET: Clientes/Details/5
+        // GET: Categorias/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Clientes clientes = db.Cliente.Find(id);
-            if (clientes == null)
+            Categorias categorias = db.Categorias.Find(id);
+            if (categorias == null)
             {
                 return HttpNotFound();
             }
-            return View(clientes);
+            return View(categorias);
         }
 
-        // GET: Clientes/Create
+        // GET: Categorias/Create
         public ActionResult Create()
         {
-            ViewBag.IDCategoria = new SelectList(db.Categorias, "IDCategoria", "Categoria");
             return View();
         }
 
-        // POST: Clientes/Create
+        // POST: Categorias/Create
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,RNC,Nombre,Telefono,Email,IDCategoria")] Clientes clientes)
+        public ActionResult Create([Bind(Include = "IDCategoria,Categoria")] Categorias categorias)
         {
             if (ModelState.IsValid)
             {
-                db.Cliente.Add(clientes);
+                db.Categorias.Add(categorias);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.IDCategoria = new SelectList(db.Categorias, "IDCategoria", "Categoria", clientes.IDCategoria);
-            return View(clientes);
+            return View(categorias);
         }
 
-        // GET: Clientes/Edit/5
+        // GET: Categorias/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Clientes clientes = db.Cliente.Find(id);
-            if (clientes == null)
+            Categorias categorias = db.Categorias.Find(id);
+            if (categorias == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.IDCategoria = new SelectList(db.Categorias, "IDCategoria", "Categoria", clientes.IDCategoria);
-            return View(clientes);
+            return View(categorias);
         }
 
-        // POST: Clientes/Edit/5
+        // POST: Categorias/Edit/5
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,RNC,Nombre,Telefono,Email,IDCategoria")] Clientes clientes)
+        public ActionResult Edit([Bind(Include = "IDCategoria,Categoria")] Categorias categorias)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(clientes).State = EntityState.Modified;
+                db.Entry(categorias).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.IDCategoria = new SelectList(db.Categorias, "IDCategoria", "Categoria", clientes.IDCategoria);
-            return View(clientes);
+            return View(categorias);
         }
 
-        // GET: Clientes/Delete/5
+        // GET: Categorias/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Clientes clientes = db.Cliente.Find(id);
-            if (clientes == null)
+            Categorias categorias = db.Categorias.Find(id);
+            if (categorias == null)
             {
                 return HttpNotFound();
             }
-            return View(clientes);
+            return View(categorias);
         }
 
-        // POST: Clientes/Delete/5
+        // POST: Categorias/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Clientes clientes = db.Cliente.Find(id);
-            db.Cliente.Remove(clientes);
+            Categorias categorias = db.Categorias.Find(id);
+            db.Categorias.Remove(categorias);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

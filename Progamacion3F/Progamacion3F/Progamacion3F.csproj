@@ -145,9 +145,19 @@
     <Compile Include="Migrations\202004070650194_ClientesClass-v1.designer.cs">
       <DependentUpon>202004070650194_ClientesClass-v1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004070918497_FacturaClass-v1.cs" />
+    <Compile Include="Migrations\202004070918497_FacturaClass-v1.designer.cs">
+      <DependentUpon>202004070918497_FacturaClass-v1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004071436027_v12.cs" />
+    <Compile Include="Migrations\202004071436027_v12.designer.cs">
+      <DependentUpon>202004071436027_v12.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Categorias.cs" />
     <Compile Include="Models\Clientes.cs" />
+    <Compile Include="Models\DetalleFactura.cs" />
+    <Compile Include="Models\Factura.cs" />
     <Compile Include="Models\MatenimientosContext.cs" />
     <Compile Include="Models\Productos.cs" />
     <Compile Include="Models\Proveedores.cs" />
@@ -228,6 +238,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202004070650194_ClientesClass-v1.resx">
       <DependentUpon>202004070650194_ClientesClass-v1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004070918497_FacturaClass-v1.resx">
+      <DependentUpon>202004070918497_FacturaClass-v1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004071436027_v12.resx">
+      <DependentUpon>202004071436027_v12.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

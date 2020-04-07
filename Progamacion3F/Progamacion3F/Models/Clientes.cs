@@ -20,6 +20,7 @@ namespace Progamacion3F.Models
         public string Telefono { get; set; }
         public string Email { get; set; }
         public int IDCategoria { get; set; }
+
         [ForeignKey("IDCategoria")]
         public Categorias Categoria { get; set; }
     }

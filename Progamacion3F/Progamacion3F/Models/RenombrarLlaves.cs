@@ -10,10 +10,10 @@ namespace Progamacion3F.Models
     {
         public override void Up()
         {
-            DropPrimaryKey("dbo.Clientes", new[] { "ID" });
-            DropColumn("dbo.Clientes", "ID");
-            AddColumn("dbo.Clientes", "IDClientes", c => c.Int(nullable: false, identity: true));
-            AddPrimaryKey("dbo.Clientes", "IDClientes");
+            //DropPrimaryKey("dbo.Clientes", new[] { "ID" });
+            //DropColumn("dbo.Clientes", "ID");
+            //AddColumn("dbo.Clientes", "IDClientes", c => c.Int(nullable: false, identity: true));
+            //AddPrimaryKey("dbo.Clientes", "IDClientes");
         }
     }
 }

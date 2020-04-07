@@ -12,13 +12,21 @@ namespace Progamacion3F.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
         public int IDDetalle { get; set; }
+
+        public int IDFactura { get; set; }
+
         [ForeignKey("IDFactura")]
-        public Factura IDFactura { get; set; }
-        [ForeignKey("IDProductos")]
-        public Productos IDProductos { get; set; }
+        public Factura Factura { get; set; }
+
+        public int IDProducto { get; set; }
+
+        [ForeignKey("IDProducto")]
+        public Productos Producto { get; set; }
+
         [Required]
         public int Cantidad { get; set; }
         [Required]
         public decimal Precio { get; set; }
+        public decimal SubTotal { get; set; }
     }
 }

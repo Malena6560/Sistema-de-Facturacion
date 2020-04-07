@@ -153,6 +153,14 @@
     <Compile Include="Migrations\202004071436027_v12.designer.cs">
       <DependentUpon>202004071436027_v12.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004071531408_v13.cs" />
+    <Compile Include="Migrations\202004071531408_v13.designer.cs">
+      <DependentUpon>202004071531408_v13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004071543465_v15.cs" />
+    <Compile Include="Migrations\202004071543465_v15.designer.cs">
+      <DependentUpon>202004071543465_v15.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Categorias.cs" />
     <Compile Include="Models\Clientes.cs" />
@@ -244,6 +252,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004071436027_v12.resx">
       <DependentUpon>202004071436027_v12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004071531408_v13.resx">
+      <DependentUpon>202004071531408_v13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004071543465_v15.resx">
+      <DependentUpon>202004071543465_v15.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

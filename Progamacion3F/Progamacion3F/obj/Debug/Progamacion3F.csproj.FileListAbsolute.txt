@@ -95,3 +95,4 @@ C:\Users\Malena\Documents\GitHub\Sistema-de-Facturacion\Progamacion3F\Progamacio
 C:\Users\Malena\Documents\GitHub\Sistema-de-Facturacion\Progamacion3F\Progamacion3F\obj\Debug\Progamacion3F.Migrations.v12.resources
 C:\Users\Malena\Documents\GitHub\Sistema-de-Facturacion\Progamacion3F\Progamacion3F\obj\Debug\Progamacion3F.Migrations.v13.resources
 C:\Users\Malena\Documents\GitHub\Sistema-de-Facturacion\Progamacion3F\Progamacion3F\obj\Debug\Progamacion3F.Migrations.v15.resources
+C:\Users\Malena\Documents\GitHub\Sistema-de-Facturacion\Progamacion3F\Progamacion3F\obj\Debug\Progamacion3F.Migrations.v16.resources

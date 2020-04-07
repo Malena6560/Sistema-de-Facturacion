@@ -19,5 +19,6 @@ namespace Progamacion3F.Models
         public DbSet<Factura> Facturas { get; set; }
         public DbSet<DetalleFactura> DetalleFacturas { get; set; }
         public DbSet<Categorias> Categorias { get; set; }
+        public DbSet<EntradaMercancia> EntradaMercancias { get; set; }
     }
 }
